@@ -78,16 +78,6 @@ enum planck_layers {
 #define UNSC KC_UNDERSCORE          // _
 
 // numeric layer aliases...
-#define ALT1 LALT(KC_1)
-#define ALT2 LALT(KC_2)
-#define ALT3 LALT(KC_3)
-#define ALT4 LALT(KC_4)
-#define ALT5 LALT(KC_5)
-#define ALT6 LALT(KC_6)
-#define ALT7 LALT(KC_7)
-#define ALT8 LALT(KC_8)
-#define ALT9 LALT(KC_9)
-#define ALT0 LALT(KC_0)
 
 // function layer aliases...
 #define F1__ KC_F1
@@ -132,15 +122,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 
 [_SYMBOLS] = LAYOUT_planck_grid(
-    TRNS, NONE, NONE, SQUO, BSLS, PERC, AMPR, LBRC, RBRC, PLUS, MINS, EQUL,
-    CAPS, NONE, NONE, NONE, DQUO, AT__, PIPE, LPRN, RPRN, ASTR, SQUO, DQUO,
+    TRNS, NONE, NONE, SQUO, BSLS, PERC, AMPR, LPRN, RPRN, PLUS, MINS, EQUL,
+    CAPS, NONE, NONE, NONE, DQUO, AT__, PIPE, LBRC, RBRC, ASTR, SLSH, ENTR,
     SHFT, NONE, NONE, NONE, BTCK, DOLR, EXLM, LBRK, RBRK, CART, TILD, SHFT,
     DEL_, SUPR, CTRL, ALT_, TRNS, UNSC, UNSC, HASH, NONE, NONE, NONE, NONE
 ),
 /* ,-----------------------------------------------------------------------.
  * |  בּ  |     |     |  '  |  \  |  %  |  &  |  (  |  )  |  +  |  -  |  =  |
  * |-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
- * | esc |     |     |     |  "  |  @  |  |  |  [  |  ]  |  *  |  '  |  "  |
+ * | esc |     |     |     |  "  |  @  |  |  |  [  |  ]  |  *  |  /  |    |
  * |-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
  * |  וּ  |     |     |     |  `  |  $  |  !  |  {  |  }  |  ^  |  ~  |  וּ  |
  * |-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
@@ -151,7 +141,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_NUMERIC] = LAYOUT_planck_grid(
     DOLR, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, BKSP,
-    XCTL, ALT1, ALT2, ALT3, ALT4, ALT5, ALT6, ALT7, ALT8, ALT9, ALT0, ENTR,
+    XCTL, NONE, NONE, NONE, NONE, NONE, NONE, NONE, NONE, NONE, NONE, ENTR,
     SHFT, NONE, NONE, NONE, NONE, NONE, NONE, NONE, NONE, NONE, NONE, SHFT,
     DEL_, SUPR, CTRL, ALT_, NONE, SPC_, SPC_, TRNS, NONE, NONE, NONE, NONE
 ),
@@ -165,6 +155,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * | del | win | ctl | alt |     |   space   | NUM |     |     |     |     |
  * `-----------------------------------------------------------------------`
  */
+
 
 
 [_FUNC] = LAYOUT_planck_grid(
