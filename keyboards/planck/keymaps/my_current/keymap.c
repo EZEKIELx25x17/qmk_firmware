@@ -107,6 +107,24 @@ enum planck_layers {
 #define PGUP KC_PGUP
 #define END_ KC_END
 
+// numpad layer aliases...
+#define PSLS KC_PSLS
+#define PAST KC_PAST
+#define PMIN KC_PMNS
+#define PPLS KC_PPLS
+#define PENT KC_PENT
+#define NP_1 KC_P1
+#define NP_2 KC_P2
+#define NP_3 KC_P3
+#define NP_4 KC_P4
+#define NP_5 KC_P5
+#define NP_6 KC_P6
+#define NP_7 KC_P7
+#define NP_8 KC_P8
+#define NP_9 KC_P9
+#define NP_0 KC_P0
+#define PDOT KC_PDOT
+
 // misc. aliases...
 #define NONE KC_NO
 #define TRNS KC_TRANSPARENT
@@ -187,19 +205,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 
 [_NUMPAD] = LAYOUT_planck_grid(
-    TRNS, NONE, NONE, NONE, NONE, NONE, NONE, KC_7, KC_8, KC_9, NONE, BKSP,
-    TRNS, NONE, NONE, NONE, NONE, NONE, NONE, KC_4, KC_5, KC_6, NONE, ENTR,
-    SHFT, NONE, NONE, NONE, NONE, NONE, NONE, KC_1, KC_2, KC_3, NONE, SHFT,
-    DEL_, SUPR, CTRL, ALT_, TRNS, SPC_, SPC_, KC_0, NONE, NONE, NONE, NONE
+    TRNS, NONE, NONE, NONE, NONE, NONE, NONE, NP_7, NP_8, NP_9, PSLS, PAST,
+    TRNS, NONE, NONE, NONE, NONE, NONE, NONE, NP_4, NP_5, NP_6, PMIN, PPLS,
+    SHFT, NONE, NONE, NONE, NONE, NONE, NONE, NP_1, NP_2, NP_3, NONE, PENT,
+    DEL_, SUPR, CTRL, ALT_, TRNS, SPC_, SPC_, NP_0, NP_0, PDOT, NONE, NONE
 ),
 /* ,-----------------------------------------------------------------------.
- * | NPD |     |     |     |     |     |     |  7  |  8  |  9  |     |    |
+ * | NPD |     |     |     |     |     |     |  7  |  8  |  9  |  /  |  *  |
  * |-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
- * | esc |     |     |     |     |     |     |  4  |  5  |  6  |     |    |
+ * | esc |     |     |     |     |     |     |  4  |  5  |  6  |  -  |  +  |
  * |-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
- * |  וּ  |     |     |     |     |     |     |  1  |  2  |  3  |     |  וּ  |
+ * |  וּ  |     |     |     |     |     |     |  1  |  2  |  3  |     |    |
  * |-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
- * | del | win | ctl | alt | SYM |   space   |  0  |     |     |     |     |
+ * | del | win | ctl | alt | SYM |   space   |  0  |  0  |  .  |     |     |
  * `-----------------------------------------------------------------------`
  */
 
