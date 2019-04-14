@@ -20,6 +20,13 @@
                                 }
 #endif
 
+<<<<<<< HEAD:keyboards/planck/keymaps/my_ver3/config.h
+=======
+#define MUSIC_MASK (keycode != KC_NO)
+
+#define PERMISSIVE_HOLD
+
+>>>>>>> a6857d18e14322fb75bb168ab13fbea0ff631324:keyboards/planck/keymaps/andylikescandy/config.h
 /*
  * MIDI options
  */
